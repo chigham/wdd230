@@ -1,0 +1,32 @@
+@media only screen and (min-width: 600px) {
+    header {
+        background: lightpink;
+        color: black;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        background: lightgreen;
+        color: black;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: right;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main h2 {
+        grid-column: 1 / 4;
+    }
+
+    main section {
+        padding: 2rem;
+    }
+}
