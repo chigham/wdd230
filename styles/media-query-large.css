@@ -1,13 +1,13 @@
 @media only screen and (min-width: 600px) {
     header {
-        background: lightpink;
+        background: #D8E2DC;
         color: black;
         align-items: center;
         justify-content: center;
     }
 
     nav {
-        background: lightgreen;
+        background: #ffffff;
         color: black;
         display: flex;
         flex-direction: row-reverse;
