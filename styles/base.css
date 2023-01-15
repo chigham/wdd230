@@ -25,6 +25,10 @@ nav, header {
     background-color: black;
     color: white;
 }
+
+nav a {
+    color: #FFCAD4;
+}
   
 header {
     padding: 2rem;

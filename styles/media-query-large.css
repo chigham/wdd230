@@ -15,6 +15,10 @@
         align-items: right;
     }
 
+    nav a {
+        color: blue;
+    }
+
     main {
         grid-template-columns: 1fr;
         display: grid;
