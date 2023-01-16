@@ -27,16 +27,24 @@
     <meta property="og:url" content="https://chigham.github.io/wdd230/">
 </head>
 <body>
-
-    <nav>
-        <a href="#">&#9776;</a>
-        <a href="https://www.linkedin.com/in/christopher-higham-5b7501132/" target="_blank">My LinkedIn</a>
-        <a href="https://byui.edu/" target="_blank">BYU-I Homepage</a>
-    </nav>
     
     <header>
-        <div class="header-image-div"><img src="images/professional_headshot_small.png" alt="dashing professional picture of me"></div>
-        <h1>Christopher Higham</h1>
+        <section class="header-card">
+            <div class="header-image-div"><img src="images/professional_headshot_small.png" alt="dashing professional picture of me"></div>
+        
+            <h1>Christopher<br>Higham</h1>
+        </section>
+
+        <button>&#9776;</button>
+        
+        <nav>
+            <!--<a href="https://www.linkedin.com/in/christopher-higham-5b7501132/" target="_blank">My LinkedIn</a>
+            <a href="https://byui.edu/" target="_blank">BYU-I Homepage</a>-->
+            <ul>
+                <li><a href="https://www.linkedin.com/in/christopher-higham-5b7501132/" target="_blank">My LinkedIn</a></li>
+                <li><a href="https://byui.edu/" target="_blank">BYU-I Homepage</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--<div class="left-sidebar">Left Sidebar</div>-->
@@ -76,6 +84,7 @@
     </footer>
     
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
     <script>getYear();getLastModifiedDate()</script>
 </body>
 </html>

@@ -12,33 +12,70 @@ h1, h2, h3 {
 a {
     text-decoration: none;
 }
-
-nav {
-    padding: 2rem;
-    grid-column: 1 / 4;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-}
-
-nav, header {
-    background-color: black;
-    color: white;
-}
-
-nav a {
-    color: #FFCAD4;
-}
   
 header {
-    padding: 2rem;
+    /*padding: 2rem;*/
     grid-column: 1 / 4;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: auto 46px;
+    gap: 1rem;
+    background-color: black;
+}
+
+.header-card {
     display: flex;
     gap: 1rem;
 }
 
 header div.header-image-div img {
     max-height: 100px;
+}
+
+header button {
+    height: 46px;
+    width: 46px;
+    font-size: 2rem;
+}
+
+nav {
+    /*padding: 1rem;
+    grid-column: 1 / 4;
+    gap: 1rem;*/
+    align-items: right;
+    justify-content: center;
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+nav, header {
+    color: white;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    color: #FFCAD4;
+    display: block;
+    border: 1px solid #D8E2DC;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
 }
 
 /*.left-sidebar {
@@ -75,4 +112,5 @@ footer {
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
 }

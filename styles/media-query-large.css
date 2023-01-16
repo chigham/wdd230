@@ -1,22 +1,41 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 38rem) {
     header {
         background: #D8E2DC;
         color: black;
-        align-items: center;
-        justify-content: center;
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*grid-template-columns: auto fit-content;*/
+        display: flex;
+        gap: initial;
+    }
+
+    header button {
+        display: none;
     }
 
     nav {
-        background: #ffffff;
+        /*background: #ffffff;*/
+        background: #D8E2DC;
         color: black;
-        display: flex;
+        position: initial;
         flex-direction: row-reverse;
         justify-content: flex-end;
         align-items: right;
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        position:absolute;
+        top:0;
+        right:0;
     }
 
     nav a {
         color: blue;
+        background-color: initial;
+        border: initial;
     }
 
     main {
