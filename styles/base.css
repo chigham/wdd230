@@ -94,6 +94,13 @@ main {
     list-style-type: none;
 }
 
+.dark-mode-toggler {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(50, 50, 50, 1);
+    color: white;
+}
+
 /*.right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
