@@ -3,4 +3,13 @@ const button = document.querySelector("header button");
 
 button.addEventListener("click", () => {
     nav.classList.toggle("open");
+    checkHamburgerOpen();
 });
+
+function checkHamburgerOpen() {
+    if (nav.classList.contains("open")) {
+        button.innerHTML = "&#215;";
+    } else {
+        button.innerHTML = "&#9776;";
+    }
+}
