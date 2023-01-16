@@ -1,22 +1,41 @@
-.header-dark-mode {}
+.header-dark-mode {
+    background-color: black;
+    color: #FFCAD4;
+}
 
-.header-title-dark-mode {}
+.header-title-dark-mode {
+    color: #FFCAD4;
+}
 
-.header-nav-list-dark-mode {}
+.header-nav-list-dark-mode {
+    color: yellowgreen;
+}
 
-.main-dark-mode {}
+.main-dark-mode {
+    background-color: rgba(50, 50, 50, 1);
+}
 
-.main-title-dark-mode {}
+.main-title-dark-mode {
+    color: #FFCAD4;
+}
 
-.main-section-headings-dark-mode {}
+.main-section-headings-dark-mode {
+    color: #FFCAD4;
+}
 
-.main-section-links-dark-mode {}
+.main-section-links-dark-mode {
+    color: yellowgreen;
+}
 
-.footer-dark-mode {}
+.footer-dark-mode {
+    background-color: rgba(25, 25, 25, 1);
+}
 
-.footer-text-dark-mode {}
+.footer-text-dark-mode {
+    color: #FFCAD4;
+}
 
 .dark-mode-toggler-dark-mode {
     color: black;
-    background-color: white;
+    background-color: #FFCAD4;
 }

@@ -96,7 +96,7 @@ main {
 
 .dark-mode-toggler {
     width: 5rem;
-    height: 5rem;
+    height: 3.5rem;
     background-color: rgba(50, 50, 50, 1);
     color: white;
 }
