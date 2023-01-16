@@ -1,0 +1,22 @@
+.header-dark-mode {}
+
+.header-title-dark-mode {}
+
+.header-nav-list-dark-mode {}
+
+.main-dark-mode {}
+
+.main-title-dark-mode {}
+
+.main-section-headings-dark-mode {}
+
+.main-section-links-dark-mode {}
+
+.footer-dark-mode {}
+
+.footer-text-dark-mode {}
+
+.dark-mode-toggler-dark-mode {
+    color: black;
+    background-color: white;
+}
