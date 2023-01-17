@@ -48,6 +48,7 @@ header nav ul li a {
     padding: 0.5rem;
     text-align: right;
     display: block;
+    color: white;
 }
 
 header nav.open {
@@ -129,5 +130,5 @@ footer .bottom-line {
 }
 
 footer div p {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
