@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1.33em;
+    }
+
+    .logo {
+        scale: calc(0.67);
+    }
+
+    header button {
+        display: none;
+    }
+
+    header nav {
+        position: initial;
+        display: flex;
+    }
+
+    header nav ul {
+        position: initial;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        align-items: right;
+        display: flex;
+    }
+
+    header nav ul li a {
+        border: initial;
+        padding: initial;
+        background-color: initial;
+    }
+}
