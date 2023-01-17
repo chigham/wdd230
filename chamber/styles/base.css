@@ -58,6 +58,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
 }
 
 /*main .hero-card {
@@ -104,12 +105,11 @@ main .card {
     border: 1px solid black;
     background-color: lightgray;
     width: 80%;
-    margin-left: 10%;
 }
 
 main .spotlights {
     width: 60%;
-    margin-left: 20%;
+    margin-bottom: 1rem;
 }
 
 footer {
