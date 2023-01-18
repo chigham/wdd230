@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load | Christopher Higham</title>
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Example</h1>
+    </header>
+
+    <main>
+        <picture><img src="images/pexels-asad-photo-maldives-3155666.jpg" alt="travel maldives" loading="lazy"></picture>
+        <picture><img src="images/pexels-daniel-jurin-1835718.jpg" alt="beach" loading="lazy"></picture>
+        <picture><img src="images/pexels-hoy-1390784.jpg" alt="dog" loading="lazy"></picture>
+        <picture><img src="images/pexels-lukas-kloeppel-466685.jpg" alt="nyc skyline" loading="lazy"></picture>
+        <picture><img src="images/pexels-pixabay-158316.jpg" alt="landscape" loading="lazy"></picture>
+        <picture><img src="images/pexels-simon-berger-688660.jpg" alt="winter scene" loading="lazy"></picture>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> Christopher Higham<span id="country"><img src="../images/us_flag_small.png" alt="us flag"></span></p>
+        <p class="highlight" id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+    <script>getYear();getLastModifiedDate()</script>
+</body>
+</html>

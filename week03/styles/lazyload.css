@@ -1,0 +1,41 @@
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+picture img {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    animation: fade 5s;
+}
+
+footer {
+    background: #F4ACB7;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+#country img {
+    transform: scale(0.5);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
