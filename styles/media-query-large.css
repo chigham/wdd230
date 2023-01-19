@@ -20,7 +20,6 @@
         position: initial;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        align-items: right;
         display: flex;
     }
 
