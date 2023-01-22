@@ -19,8 +19,8 @@
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
 </head>
-<body>
-    <header>
+<body class="discover-body">
+    <header class="discover-header">
         <a class="logo-container" href="index.html" target="_self">
             <img class="logo" alt="gcc logo" src="images/gcc-logo.webp">
         </a>
@@ -39,43 +39,39 @@
         </nav>
     </header>
 
-    <main>
-        <div class=hero-card>
-            <img src="images/hero-jud.webp" alt="Jud Ashman snipping some ribbon like a boss">
-            
-            <div class="call-to-action">
-                <button type="submit"><a href="#" target="_blank">Join the Chamber!</a></button>
-            </div>
-        </div>
+    <div class="left-sidebar">
+        Did you know:
+        <ul>
+            <li>Gaithersburg has various commercial zones with different regulations.</li>
+            <li>9 of the top 10 largest employers in the city are in the medical and/or engineering industries.</li>
+            <li>Previously zoned C-2, Lakeforest Mall is to be rezoned to Mixed Use Development and expected to be converted into 1,600 residential units, greenspace, and various commercial uses.</li>
+            <li>Population: 69-70 thousand</li>
+            <li>Median Household Income: $98,000</li>
+            <li>Poverty Rate: 11%</li>
+            <li>Pop under age 18: 22%</li>
+            <li>Pop over age 65: 13%</li>
+            <li>Households with languages other than English spoken at home: 50.3%</li>
+        </ul>
 
-        <section class="card">
-            <h2>Events</h2>
-            
-            <p>
-                <bold>Name of Event:</bold><br>Description of event
-            </p>
-        </section>
+        <p id="last-visited"></p>
+    </div>
 
-        <section class="card">
-            <h2>Weather</h2>
-            
-            <p>
-                Temperature: 33°<br>Chance of Rain: 40%
-            </p>
-        </section>
-        
-        <section class="spotlights">
-            <h3>Member Spotlights</h3>
-
-            <div class="spotlight-card card">
-                <p>
-                    Jimmy and Kiesha recently joined the planning commission and had great success lobbying for Gaithersburg small businesses. Read their story <a href="#" target="_blank">here</a>!
-                </p>
-            </div>
-        </section>
+    <main class="discover-main">
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/gburg-zoning-large.webp">
+            <img src="images/gburg-zoning-small.webp" alt="Gaithersburg Commercial Zoning Map" loading="lazy">
+        </picture>
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/employment-table.webp">
+            <img src="images/employment-table-small.webp" alt="Employment Table" loading="lazy">
+        </picture>
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/race-breakdown.webp">
+            <img src="images/race-breakdown-small.webp" alt="Race Distribution Bar Graph" loading="lazy">
+        </picture>
     </main>
 
-    <footer>
+    <footer class="discover-footer">
         <div class="contact">
             <a href="index.html" target="_self">
                 <img class="logo" alt="gcc logo" src="images/gcc-logo.webp">

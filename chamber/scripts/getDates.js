@@ -11,4 +11,20 @@ function getLastModifiedDate() {
     document.getElementById("lastModified").innerHTML = "Last Modified " + monthName + " " + day + ", " + year; //new Date(document.lastModified)
 }
 
-getYear();getLastModifiedDate()
+function shareLastvisitDate() {
+    let lastVisited = document.getElementById("last-visited")
+
+    if (localStorage.getItem("lastVisit")) {
+        let lastVisitDate = new Date(localStorage.getItem("lastVisit"));
+        let currentVisitDate = new Date();
+
+        let timeDifference = Math.abs(currentVisitDate = lastVisitDate);
+        let daysDifferent = Math.ceil(timeDifference / 1000 / 3600 / 24);
+
+        lastVisited.innerHTML = "You last visited this page " + daysDifferent + " days ago.";
+    } else {
+        lastVisited.innerHTML = "Welcome! This is your first visit to this page."
+    }
+}
+
+getYear();getLastModifiedDate();shareLastvisitDate();

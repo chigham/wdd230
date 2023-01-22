@@ -3,6 +3,11 @@
         font-size: 1.33em;
     }
 
+    .discover-body {
+        display: grid;
+        grid-template-columns: 20% auto;
+    }
+
     .logo {
         scale: calc(0.67);
     }
@@ -29,5 +34,15 @@
         border: initial;
         padding: initial;
         background-color: initial;
+    }
+
+    .discover-header, .discover-footer {
+        grid-column: 1 / 3;
+    }
+
+    .discover-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
     }
 }
