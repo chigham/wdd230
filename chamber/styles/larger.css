@@ -44,5 +44,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        width: 100%
+    }
+
+    .discover-main picture {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .discover-main picture img:hover {
+        box-shadow: 0 0 5px #333;
     }
 }

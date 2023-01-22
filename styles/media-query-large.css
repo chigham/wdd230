@@ -62,7 +62,7 @@
     }
 
     picture {
-        grid-column: 1/4;
+        grid-column: 1 / 4;
     }
 
     main h2 {

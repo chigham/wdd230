@@ -59,6 +59,7 @@ main {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+    width: 100%;
 }
 
 /*main .hero-card {
@@ -114,7 +115,7 @@ main .spotlights {
 
 main picture {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 main picture img {
