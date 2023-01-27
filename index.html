@@ -99,6 +99,47 @@
         <button class="dark-mode-toggler">Dark Mode</button>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16762.795681976633!2d-77.20684574112444!3d39.14136459614814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62d3624ca13b5%3A0xe38f5a8180ad7235!2sGaithersburg%2C%20MD!5e0!3m2!1sen!2sus!4v1674193845303!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form method="post" action="">
+            <legend>Informmation</legend>
+            <label>Full Name* <input type="text" name="full-name" required></label>
+            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <div>
+                <label>Page Rating [ <span id="rating">6</span> ] <input type="range" name="page-rating" id="r" min="1" max="10" list="10"></label>
+                <div class="ratingLabels">
+                    <span class="ratevalue">1</span>
+                    <span class="ratevalue">2</span>
+                    <span class="ratevalue">3</span>
+                    <span class="ratevalue">4</span>
+                    <span class="ratevalue">5</span>
+                    <span class="ratevalue">6</span>
+                    <span class="ratevalue">7</span>
+                    <span class="ratevalue">8</span>
+                    <span class="ratevalue">9</span>
+                    <span class="ratevalue">10</span>
+                </div>
+            </div>
+            <label>Password* <input type="password" name="username-identifyer" id="password" pattern="(?=.*\W).{5,12}" required></label>
+            <div>
+                <label>Repeat Password* <input type="password" name="repeat-username-identifyer" id="repeat-password" required></label>
+                <label id="form-message"></label>
+            </div>
+
+            <input type="submit" value="Propose my course">
+
+            <datalist class="10">
+                <option label="1" class="ratevalue">1</option>
+                <option label="2" class="ratevalue">2</option>
+                <option label="3" class="ratevalue">3</option>
+                <option label="4" class="ratevalue">4</option>
+                <option label="5" class="ratevalue">5</option>
+                <option label="6" class="ratevalue">6</option>
+                <option label="7" class="ratevalue">7</option>
+                <option label="8" class="ratevalue">8</option>
+                <option label="9" class="ratevalue">9</option>
+                <option label="10" class="ratevalue">10</option>
+            </datalist>
+        </form>
     </main>
 
     <!--<div class="right-sidebar">Right Sidebar</div>-->
@@ -111,6 +152,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
     <script>getYear();getLastModifiedDate()</script>
 </body>
 </html>
