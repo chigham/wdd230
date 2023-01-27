@@ -97,13 +97,17 @@
         </section>
 
         <button class="dark-mode-toggler">Dark Mode</button>
+        <div></div>
+        <div></div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16762.795681976633!2d-77.20684574112444!3d39.14136459614814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62d3624ca13b5%3A0xe38f5a8180ad7235!2sGaithersburg%2C%20MD!5e0!3m2!1sen!2sus!4v1674193845303!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16762.795681976633!2d-77.20684574112444!3d39.14136459614814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62d3624ca13b5%3A0xe38f5a8180ad7235!2sGaithersburg%2C%20MD!5e0!3m2!1sen!2sus!4v1674193845303!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
         <form method="post" action="">
             <legend>Informmation</legend>
-            <label>Full Name* <input type="text" name="full-name" required></label>
-            <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label>Full Name* <input type="text" name="full-name" id="full-name" required></label>
+            <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
             <div>
                 <label>Page Rating [ <span id="rating">6</span> ] <input type="range" name="page-rating" id="r" min="1" max="10" list="10"></label>
                 <div class="ratingLabels">
@@ -140,6 +144,37 @@
                 <option label="10" class="ratevalue">10</option>
             </datalist>
         </form>
+
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th class="large-table-heading" colspan="2">Form Input</th>
+                </tr>
+                <tr class="small-table-heading">
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td><span id="table-name"></span></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><span id="table-email"></span></td>
+                </tr>
+                <tr>
+                    <td>Rating:</td>
+                    <td><span id="table-rating">6</span></td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><span id="table-username"></span></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <!--<div class="right-sidebar">Right Sidebar</div>-->
@@ -153,6 +188,7 @@
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/form.js"></script>
+    <script src="scripts/table.js"></script>
     <script>getYear();getLastModifiedDate()</script>
 </body>
 </html>

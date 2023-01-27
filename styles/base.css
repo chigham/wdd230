@@ -1,7 +1,7 @@
 :root {
     --main-background: #FFCAD4;
     --footer-background: #F4ACB7;
-    --black-color: var(--black-color);
+    --black-color: black;
 }
 
 body {
@@ -163,6 +163,32 @@ form legend {
 	font-size: 0.8rem;
 	margin: 0 0 1rem 1.1rem;
     grid-column: 2/3;
+}
+
+table {
+    border: 1px solid #eee;
+    background-color: white;
+}
+
+.small-table-heading th {
+    background-color: #eee;
+    color: var(--black-color);
+    padding: 1rem;
+}
+
+tbody tr td {
+    background-color: var(--black-color);
+    color: white;
+    padding: 1rem;
+}
+
+tbody tr td:first-child {
+    text-align: right;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px 0;
 }
 
 footer {
