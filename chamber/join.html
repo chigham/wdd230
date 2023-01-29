@@ -39,13 +39,75 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory/index.html">Directory</a></li>
-                <li><a href="join/index.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="join-main">
+        <form method="post" action="join-thanks.html">
+            <legend>Join the Chamber!</legend>
+            <br>
+            <label>First name* <input class="normal-input" type="text" name="first-name" id="first-name" required></label>
+            <br>
+            <label>Last name* <input class="normal-input" type="text" name="last-name" id="last-name" required></label>
+            <br>
+            <label>Business position title <input class="normal-input" type="text" name="business-title" id="business-title" pattern="[a-zA-Z\- ]{7,}"></label>
+            <br>
+            <label>Email* <input class="normal-input" type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+            <br>
+            <label>Cell* <input class="normal-input" type="tel" name="cell" id="cell" placeholder="1234567899" required></label>
+            <br>
+            <label>Business name/title* <input class="normal-input" type="text" name="business-name" id="business-name" required></label>
+            <br>
+            <label>Membership level</label>
+            <label class="membership"><input type="radio" name="membership" value="np-membership"> Non-profit membership (no fee)</label>
+            <label class="membership"><input type="radio" name="membership" value="bronze-membership"> Bronze membership</label>
+            <label class="membership"><input type="radio" name="membership" value="silver-membership"> Silver membership</label>
+            <label class="membership"><input type="radio" name="membership" value="gold-membership"> Gold membership</label>
+            <br>
+            <label>Business description <textarea name="business-description" id="business-description" rows="8"></textarea></label>
+            <br>
+            <input type="hidden" name="form-date-time" id="form-date-time"></span>
+            <br>
+            <input type="submit" value="Join the Chamber" class="submit-btn">
+        </form>
+            
+        <section>
+            <p>Non-profit (NP) Membership - <i>no fee</i></p>
+            <ul>
+                <li>Business connections</li>
+                <li>Community</li>
+                <li>Annual newsletter subscription</li>
+            </ul>
+
+            <p>Bronze Membership - <i>$99 per month</i></p>
+            <ul>
+                <li>Prestige and Honor Medals</li>
+                <li>We'll give you a nod, wink and handshake</li>
+                <li>Invites to bronze-exclusive events</li>
+                <li>Everything included in NP Membership</li>
+            </ul>
+
+            <p>Silver Membership - <i>$199 per month</i></p>
+            <ul>
+                <li>Now you're part of the "in" crowd</li>
+                <li>Complementary drinks at sponsored events</li>
+                <li>Business in annual newsletter</li>
+                <li>Everything included in Bronze Membership</li>
+            </ul>
+
+            <p>Gold Membership - <i>$499 per month</i></p>
+            <ul>
+                <li>Your blood-alcohol content at events is <i>your</i> business now</li>
+                <li>Priority access to stock in chamber sponsored businesses</li>
+                <li>Gold-level VIP seating in bi-weekly chamber meetings</li>
+                <li>"Salary" &#128521;</li>
+                <li>401(k) match up to 10% (funded by hidden bronze member fees)</li>
+                <li>Everything included in Silver Membership</li>
+            </ul>
+        </section>
         
     </main>
 
@@ -78,5 +140,6 @@
 
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script>getYear();getLastModifiedDate();setDateTime();</script>
 </body>
 </html>

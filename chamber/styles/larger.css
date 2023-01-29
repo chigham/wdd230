@@ -55,4 +55,17 @@
     .discover-main picture img:hover {
         box-shadow: 0 0 5px #333;
     }
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-main:first-child, .join-main:last-child {
+        padding: 2rem;
+    }
+
+    .join-main form .normal-input, .join-main form textarea {
+        width: 50%;
+    }
 }

@@ -27,4 +27,8 @@ function shareLastvisitDate() {
     }
 }
 
-getYear();getLastModifiedDate();shareLastvisitDate();
+function setDateTime() {
+    let date = new Date();
+    let dateTime = date.toString();
+    document.getElementById("form-date-time").value = dateTime;
+}
