@@ -1,0 +1,28 @@
+* {
+    color: navy;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+}
+
+#cards {
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+footer {
+    text-align: center;
+}
