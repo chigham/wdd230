@@ -1,14 +1,11 @@
 * {
     color: navy;
+    font-family: sans-serif;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 2em;
-}
-
-h1, h2 {
-    font-family: sans-serif;
 }
 
 #cards {
