@@ -1,0 +1,23 @@
+{
+    "family-name": "Freddy",
+    "move-in-date": 20230130,
+    "members-count": 3,
+    "bishop-visited": false,
+    "members": [
+        {
+            "name": "Joshua Padgett",
+            "gender": "male",
+            "birthdate": 19940825
+        },
+        {
+            "name": "Sierra Vance",
+            "gender": "female",
+            "birthdate": 19951012
+        },
+        {
+            "name": "Phyl Padgett-Vance",
+            "gender": "prefer not to answer",
+            "birthdate": 20200104
+        }
+    ]
+}
