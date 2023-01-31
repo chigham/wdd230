@@ -6,7 +6,9 @@ const displayProphets = (prophets) => {
         let card = document.createElement("section");
         let fullName = document.createElement("h2");
         let portrait = document.createElement("img");
+
         fullName.innerHTML = prophet.name + " " + prophet.lastname;
+        
         portrait.src = prophet.imageurl;
         portrait.alt = fullName.innerHTML + "'s portrait";
         portrait.loading = "lazy";
