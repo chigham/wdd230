@@ -8,12 +8,12 @@ const displayProphets = (prophets) => {
         let portrait = document.createElement("img");
 
         fullName.innerHTML = prophet.name + " " + prophet.lastname;
-        
+
         portrait.src = prophet.imageurl;
         portrait.alt = fullName.innerHTML + "'s portrait";
         portrait.loading = "lazy";
-        portrait.width = "50%";
-        portrait.setAttribute("height", "50%");
+        portrait.width = "100";
+        portrait.setAttribute("height", "100%");
 
         card.appendChild(fullName);
         card.appendChild(portrait);
@@ -29,4 +29,4 @@ async function getProphetData(url) {
     displayProphets(data.prophets);
 };
 
-getProphetData();
+getProphetData(url);
