@@ -63,7 +63,7 @@
         
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul>
+            <ul id="learning-activities">
                 <li>Week 01: <a href="week01/holygrail.html">Holygrail Activity</a></li>
                 <li>Week 01: <a href="week01/media-query.html">CSS Media Query</a></li>
                 <li>Week 02: <a href="week02/design.html">Design</a></li>
@@ -80,7 +80,7 @@
                 <li>Week 05: <a href="https://codepen.io/chigham/pen/rNrZZQQ" target="_blank">Pseudo-Elements</a></li>
                 <li>Week 05: <a href="week05/new-ward-members.json" target="">JSON Example</a></li>
                 <li>Week 05: <a href="week05/prophets.html" target="">JSON Fetching Prophets</a></li>
-
+                <li>Week 05: <a href="week05/weather.html" target="">Weather from an API</a></li>
             </ul>
         </section>
         
@@ -95,7 +95,11 @@
         <section class="card">
             <h3>Information</h3>
             <div class="information" id="teams-login"><a href="https://www.office.com/?auth=2&home=1" target="_blank">Teams Login</a></div>
-            <div class="information" id="weather"></div>
+            <div class="information" id="weather">
+                <figure>
+                    <img id="weather-icon" src="#" alt="weather icon">
+                </figure>
+            </div>
             <div class="information" id="num-visits"></div>
             <div class="information" id="etc"></div>
         </section>
@@ -193,6 +197,8 @@
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/form.js"></script>
     <script src="scripts/table.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/learningActivities.js"></script>
     <script>getYear();getLastModifiedDate()</script>
 </body>
 </html>
