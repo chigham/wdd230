@@ -1,0 +1,7 @@
+{
+	"week01": ["week01/holygrail.html", "week01/media-query.html"],
+	"week02": ["week02/design.html", "https://codepen.io/chigham/pen/qByXEVz", "week02/bom.html"],
+	"week03": ["week03/images/landscape-cropped-towebp.webp", "week03/lazyload.html", "https://codepen.io/chigham/pen/vYaWxEV", "week03/bom.html"],
+	"week04": ["https://codepen.io/chigham/pen/ZEjxEER", "week04/images/div-p-combinators.png", "week04/tablebuild.html", "week04/form-start/index.html"],
+	"week05": ["https://codepen.io/chigham/pen/rNrZZQQ", "week05/new-ward-members.json", "week05/prophets.html", "week05/weather.html"]
+}

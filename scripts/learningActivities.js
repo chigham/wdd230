@@ -1,9 +1,9 @@
 let learningActivitiesList = document.getElementById("learning-activities");
 
-const displayActivities = (week) => {
-    week.forEach((activity) => {
+const displayActivities = (data, week) => {
+    data[week].forEach((activity) => {
         let li = document.createElement("li");
-        let a = document.createElement("a");
+        let a = document.createElement("a");console.log(a)
 
         a.setAttribute("href", activity);
         a.setAttribute("target", "_blank");
@@ -11,30 +11,18 @@ const displayActivities = (week) => {
         let result = parts[0].split("/").pop();
         a.innerHTML = result;
 
-        li.innerHTML = Object.keys(week)[0] + ": ";
-        console.log(li.innerHTML);
-
-        portrait.src = prophet.imageurl;
-        portrait.alt = fullName.innerHTML + "'s portrait";
-        portrait.loading = "lazy";
-        portrait.setAttribute("width", "150px");
-        portrait.setAttribute("height", "200px");
-
-        card.appendChild(fullName);
-        card.appendChild(portrait);
-
-        cards.appendChild(card);
+        li.innerHTML = week.charAt(0).toUpperCase() + week.slice(1) + ": ";
+        li.appendChild(a)
+        learningActivitiesList.appendChild(li)
     });
 };
 
 async function getActivities () {
-    const response = await fetch('activities.json');
+    let response = await fetch('json/activities.json');
     let data = await response.json();
-    //console.table(data.prophets);
 
     Object.keys(data).forEach((week) => {
-        //displayActivities(week);
-        console.log(week);
+        displayActivities(data, week);
     })
 };
 
