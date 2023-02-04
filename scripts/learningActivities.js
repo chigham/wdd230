@@ -3,7 +3,7 @@ let learningActivitiesList = document.getElementById("learning-activities");
 const displayActivities = (data, week) => {
     data[week].forEach((activity) => {
         let li = document.createElement("li");
-        let a = document.createElement("a");console.log(a)
+        let a = document.createElement("a");
 
         a.setAttribute("href", activity);
         a.setAttribute("target", "_blank");
