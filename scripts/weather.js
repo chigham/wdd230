@@ -14,10 +14,8 @@ async function getWeather() {
         let response = await fetch(url);
         if (response.ok) {
             let data = await response.json();
-            console.log(data);
             displayData(data);
         } else {
-            console.log("you fail");
             throw Error(await response.text());
         }
     } catch (error) {
@@ -34,7 +32,6 @@ function displayData(data) {
     childImg.src = iconsrc;
     childImg.alt = "weather icon";
     weather.appendChild(childImg);
-    console.log(weather);
 }
 
 getWeather();
