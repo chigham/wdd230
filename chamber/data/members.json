@@ -1,0 +1,113 @@
+{
+    "members": [
+        {
+            "name": "Yummy's Ice Cream & Mini Donuts",
+            "address": "98765 Girard Street Ste 300, Gaithersburg, Maryland, 20879",
+            "phone-numbers": [
+                {"office": "3015559876"},
+                {"fax": "3015559786"}
+            ],
+            "website": "https://yummysminidonuts.com/",
+            "icon": "https://img1.wsimg.com/isteam/ip/decf1cae-9ce7-4213-9065-e1295dc1de90/Yummys-Logo.png/:/rs=w:167,h:75,cg:true,m/cr=w:167,h:75/qt=q:95",
+            "membership": "gold"
+        },
+        {
+            "name": "Venture Data",
+            "address": "915 Diamandback Road, Gaithersburg, Maryland, 20878",
+            "phone-numbers": [
+                {"office": "3015559156"},
+                {"fax": "3015559516"}
+            ],
+            "website": "https://www.venturedata.com/",
+            "icon": "https://www.venturedata.com/img/logoFooter.gif",
+            "membership": "gold"
+        },
+        {
+            "name": "Washingtonian Tower Condominium",
+            "address": "9701 Fields Road, Gaithersburg, Maryland, 20878",
+            "phone-numbers": [
+                {"office": "3019483200"},
+                {"fax": "3015553200"}
+            ],
+            "website": "images/washingtonian-tower.jpg",
+            "icon": "https://www.logodesign.net/logo/tower-inside-letter-a-4709ld.png",
+            "membership": "gold"
+        },
+        {
+            "name": "Nishiki Ramen & Sushi",
+            "address": "328 Main Street, Gaithersburg, Maryland, 20878",
+            "phone-numbers": [
+                {"office": "3015554135"}
+            ],
+            "website": "http://www.nishikiramenmd.com/",
+            "icon": "https://www.nishikiramenmd.com/wp-content/uploads/nishikiramenmd.com/2021/09/new-05-1.jpg",
+            "membership": "silver"
+        },
+        {
+            "name": "ESRI Gaithersburg",
+            "address": "9910 Key West Ave, Rockville, Maryland, 20850",
+            "phone-numbers": [
+                {"office": "3015551232"},
+                {"fax": "3015551323"}
+            ],
+            "website": "https://esri-nyc-office.hub.arcgis.com/",
+            "icon": "https://assets.themuse.com/uploaded/companies/1291/small_logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Alfaros Tree Experts",
+            "address": "14912 Damson Terrace, North Potomac, Maryland, 20878",
+            "phone-numbers": [
+                {"office": "2405555755"},
+                {"fax": "2405557555"}
+            ],
+            "website": "https://www.alfarostreeexpert.com/",
+            "icon": "https://static.wixstatic.com/media/3833c5_fe2f0affc2884560a1164b596e2a7149.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Lakewood Country Club",
+            "address": "13901 Glen Mill Rd, Rockville, Maryland, 20850",
+            "phone-numbers": [
+                {"office": "3015555430"},
+                {"fax": "7035555430"}
+            ],
+            "website": "https://www.lakewoodcc.org/",
+            "icon": "https://www.lakewoodcc.org/images/logo.png",
+            "membership": "bronze"
+        },
+        {
+            "name": "Sport Clips Haircuts of Kentlands",
+            "address": "720 Center Point Way, Gaithersburg, Maryland, 20878",
+            "phone-numbers": [
+                {"office": "3015554061"},
+                {"fax": "2025554061"}
+            ],
+            "website": "https://haircutmenkentlandsmd.com/?utm_source=SOCi&utm_medium=GMB",
+            "icon": "https://searchlogovector.com/wp-content/uploads/2018/08/sport-clips-haircuts-logo-vector.png",
+            "membership": "bronze"
+        },
+        {
+            "name": "Save the World Org",
+            "address": "98765 Girard Street Ste 200, Gaithersburg, Maryland, 20879",
+            "phone-numbers": [
+                {"office": "3015559872"},
+                {"fax": "3015559781"}
+            ],
+            "website": "https://www.savetheworldfoundation.com/",
+            "icon": "https://images.squarespace-cdn.com/content/v1/5959874517bffc97b3b91b9c/e85d2539-a4b0-41a7-a42c-84abe556a3f0/STWF.png?format=200w",
+            "membership": "non-profit"
+        },
+        {
+            "name": "Red Cross Gaithersburg",
+            "address": "9319 Gaither Rd, Gaithersburg, Maryland, 20877",
+            "phone-numbers": [
+                {"office": "3015552705"},
+                {"fax": "3015552212"}
+            ],
+            "website": "https://www.redcross.org/",
+            "icon": "https://www.redcross.org/content/dam/redcross/imported-images/redcross-logo.png.img.png",
+            "membership": "non-profit"
+        }
+    ]
+}
