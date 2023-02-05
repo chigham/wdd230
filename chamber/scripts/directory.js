@@ -42,6 +42,7 @@ function displayMembers(data) {
         
         // Address
         addressDiv.innerHTML = member.address.replace("Maryland", "MD");
+        addressDiv.innerHTML = addressDiv.innerHTML.split(",").slice(0, 2).join(",<br>") + "," + addressDiv.innerHTML.split(",").slice(2).join(",")
 
         // Phone and Fax
         member["phone-numbers"].forEach((number) => {
@@ -76,7 +77,6 @@ toggler.addEventListener("click", () => {
     toggleList.classList.toggle("toggle-active");
     toggleGrid.classList.toggle("toggle-inactive");
     toggleList.classList.toggle("toggle-inactive");
-    main.classList.toggle("main-toggle-grid");
     main.classList.toggle("main-toggle-list");
 });
 

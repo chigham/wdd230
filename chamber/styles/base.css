@@ -188,12 +188,14 @@ form input.submit-btn {
 .directory-main {
     text-align: center;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .directory-main-header {
     width: initial;
     margin-top: 2em;
     margin-bottom: 3em;
+    text-align: center;
 }
 
 .directory-main-header #toggler {
@@ -220,6 +222,32 @@ form input.submit-btn {
 
 .directory-main a {
     text-decoration: none;
+}
+
+.main-toggle-list {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: initial;
+    font-size: 0.8em;
+}
+
+.main-toggle-list section:nth-child(odd) {
+    background-color: white;
+}
+
+.main-toggle-list section:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.main-toggle-list section:nth-child(odd), .main-toggle-list section:nth-child(even) {
+    border: initial;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.main-toggle-list img {
+    display: none;
 }
 
 footer {
