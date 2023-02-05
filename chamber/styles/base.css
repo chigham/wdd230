@@ -1,3 +1,10 @@
+:root {
+    --gold: gold;
+    --silver: silver;
+    --bronze: #b87333; /* copper */
+    --non-profit: lightblue;
+}
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -103,9 +110,25 @@ main .hero-card .call-to-action button a {
 
 main .card {
     padding: 2rem;
-    border: 1px solid black;
+    border: 1px solid rgba(50, 50, 50, 1);
     background-color: lightgray;
     width: 80%;
+}
+
+main .member-gold {
+    background-color: var(--gold);
+}
+
+main .member-silver {
+    background-color: var(--silver);
+}
+
+main .member-bronze {
+    background-color: var(--bronze);
+}
+
+main .member-non-profit {
+    background-color: var(--non-profit);
 }
 
 main .spotlights {
@@ -160,6 +183,43 @@ form input.submit-btn {
 
 .join-thanks-main {
     align-items: initial;
+}
+
+.directory-main {
+    text-align: center;
+    align-items: center;
+}
+
+.directory-main-header {
+    width: initial;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.directory-main-header #toggler {
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid rgba(50, 50, 50, 1);
+}
+
+.toggle-active {
+    font-weight: 900;
+}
+
+.toggle-inactive {
+    font-weight: initial;
+}
+
+.directory-main .card {
+    height: 180px;
+}
+
+.directory-main .card img {
+    max-width: 150px;
+}
+
+.directory-main a {
+    text-decoration: none;
 }
 
 footer {

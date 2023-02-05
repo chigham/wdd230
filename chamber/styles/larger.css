@@ -68,4 +68,13 @@
     .join-main form .normal-input, .join-main form textarea {
         width: 50%;
     }
+
+    .directory-main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+
+    .directory-main .card {
+        height: 220px;
+    }
 }

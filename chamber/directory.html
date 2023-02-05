@@ -45,7 +45,14 @@
         </nav>
     </header>
 
-    <main>
+    <div class="directory-main-header">
+        <h2>Directory of Major Chamber Members</h2>
+        <span id="toggler">
+            <span id="toggle-grid" class="toggle-active">grid</span> | <span id="toggle-list" class="toggle-inactive">list</span>
+        </span>
+    </div>
+
+    <main class="directory-main main-toggle-grid">
         
     </main>
 
@@ -78,6 +85,7 @@
 
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/directory.js"></script>
     <script>getYear();getLastModifiedDate();</script>
 </body>
 </html>
