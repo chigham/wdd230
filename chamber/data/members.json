@@ -9,7 +9,8 @@
             ],
             "website": "https://yummysminidonuts.com/",
             "icon": "https://img1.wsimg.com/isteam/ip/decf1cae-9ce7-4213-9065-e1295dc1de90/Yummys-Logo.png/:/rs=w:167,h:75,cg:true,m/cr=w:167,h:75/qt=q:95",
-            "membership": "gold"
+            "membership": "gold",
+            "advertisement": "Try our yummy donuts and ice cream!"
         },
         {
             "name": "Venture Data",
@@ -20,7 +21,8 @@
             ],
             "website": "https://www.venturedata.com/",
             "icon": "https://www.venturedata.com/img/logoFooter.gif",
-            "membership": "gold"
+            "membership": "gold",
+            "advertisement": "You want data, and we want your business!"
         },
         {
             "name": "Washingtonian Tower Condominium",
@@ -31,7 +33,8 @@
             ],
             "website": "images/washingtonian-tower.jpg",
             "icon": "https://www.logodesign.net/logo/tower-inside-letter-a-4709ld.png",
-            "membership": "gold"
+            "membership": "gold",
+            "advertisement": "Uptown living with a rundown viewing."
         },
         {
             "name": "Nishiki Ramen & Sushi",
@@ -41,7 +44,8 @@
             ],
             "website": "http://www.nishikiramenmd.com/",
             "icon": "https://www.nishikiramenmd.com/wp-content/uploads/nishikiramenmd.com/2021/09/new-05-1.jpg",
-            "membership": "silver"
+            "membership": "silver",
+            "advertisement": "Best sushi in Kentlands. Check our our menu."
         },
         {
             "name": "ESRI Gaithersburg",
@@ -52,7 +56,8 @@
             ],
             "website": "https://esri-nyc-office.hub.arcgis.com/",
             "icon": "https://assets.themuse.com/uploaded/companies/1291/small_logo.png",
-            "membership": "silver"
+            "membership": "silver",
+            "advertisement": "We'll help you with your maps esri time!"
         },
         {
             "name": "Alfaros Tree Experts",
@@ -63,7 +68,8 @@
             ],
             "website": "https://www.alfarostreeexpert.com/",
             "icon": "https://static.wixstatic.com/media/3833c5_fe2f0affc2884560a1164b596e2a7149.png/v1/fill/w_431,h_288,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3833c5_fe2f0affc2884560a1164b596e2a7149.png",
-            "membership": "silver"
+            "membership": "silver",
+            "advertisement": "Need to cut a branch? Look no further!"
         },
         {
             "name": "Lakewood Country Club",
@@ -74,7 +80,8 @@
             ],
             "website": "https://www.lakewoodcc.org/",
             "icon": "https://www.lakewoodcc.org/images/logo.png",
-            "membership": "bronze"
+            "membership": "bronze",
+            "advertisement": ""
         },
         {
             "name": "Sport Clips Haircuts of Kentlands",
@@ -85,7 +92,8 @@
             ],
             "website": "https://haircutmenkentlandsmd.com/?utm_source=SOCi&utm_medium=GMB",
             "icon": "https://searchlogovector.com/wp-content/uploads/2018/08/sport-clips-haircuts-logo-vector.png",
-            "membership": "bronze"
+            "membership": "bronze",
+            "advertisement": ""
         },
         {
             "name": "Save the World Org",
@@ -96,7 +104,8 @@
             ],
             "website": "https://www.savetheworldfoundation.com/",
             "icon": "https://images.squarespace-cdn.com/content/v1/5959874517bffc97b3b91b9c/e85d2539-a4b0-41a7-a42c-84abe556a3f0/STWF.png?format=200w",
-            "membership": "non-profit"
+            "membership": "non-profit",
+            "advertisement": ""
         },
         {
             "name": "Red Cross Gaithersburg",
@@ -107,7 +116,8 @@
             ],
             "website": "https://www.redcross.org/",
             "icon": "https://www.redcross.org/content/dam/redcross/imported-images/redcross-logo.png.img.png",
-            "membership": "non-profit"
+            "membership": "non-profit",
+            "advertisement": ""
         }
     ]
 }
