@@ -77,8 +77,14 @@ main .meeting-banner {
     font-weight: 700;
 }
 
-/*main .hero-card {
+main #weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
 
+/*main #weather p {
+    padding: 0;
 }*/
 
 main .hero-card img {
