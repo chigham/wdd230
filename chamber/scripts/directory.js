@@ -1,5 +1,5 @@
 const main = document.querySelector("main");
-const JSON = "data/members.json"
+const JSON = "data/members.json";
 
 const toggler = document.querySelector("#toggler");
 const toggleGrid = document.querySelector("#toggle-grid");
