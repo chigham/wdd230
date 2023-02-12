@@ -22,11 +22,15 @@ let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}
 let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&cnt=${cnt}&appid=${apiKey}`;
 
 async function getWeather() {
+    
+    // Request data
     let response = await fetch(url);
     let responseForecast = await fetch(urlForecast);
 
     let data = await response.json();
     let dataForecast = await responseForecast.json();
+
+    
 
     displayData(data, dataForecast);
 }
@@ -36,22 +40,19 @@ function displayData(data, dataForecast) {
     let desc = data.weather[0];
     let iconsrc = `https://openweathermap.org/img/w/${desc.icon}.png`;
 
-    /*weather.innerHTML = "Current Weather<br>" + temp.toFixed(1) + "&deg;F " + desc.description + "<br>" + weather.innerHTML;
-    childImg.src = iconsrc;
-    childImg.alt = "weather icon";
-    weather.appendChild(childImg);*/
-
+    // Current weather block
     currentWeather.innerHTML = "Current Weather<br>" + temp.toFixed(1) + "&deg;F " + desc.description + "<br>" + weather.innerHTML;
     childImg.src = iconsrc;
     childImg.alt = "weather icon";
     currentWeather.appendChild(childImg);
     weather.appendChild(currentWeather);
 
+    // Forecasted 3 days
     forecastDay(dataForecast);
 }
 
 function forecastDay(dataForecast) {
-    let daysAhead = 1
+    let daysAhead = 1;
     let today = new Date();
     let tomorrow = new Date(today.getTime() + daysAhead * 24 * 60 * 60 * 1000);
     daysAhead = 2;
@@ -66,40 +67,35 @@ function forecastDay(dataForecast) {
     let threeDaysSection = document.createElement("section");
     let threeDaysForecastText = document.createElement("div");
 
-    //************************* */
+
+
+    // Extract temperature data
     let tomorrowsTempList = dataForecast["list"].filter(function(timestamp) {
         timestamp["dt"] = new Date(timestamp["dt"] * 1000); // only do this once
         return timestamp["dt"].getDate() === tomorrowsDate.getDate();
     })
-
-    console.log(tomorrowsTempList);
     let tomorrowTemps = new Array();
     tomorrowsTempList.forEach((timestamp) => {
         tomorrowTemps.push(timestamp.main.temp);
     })
 
-
     let twoDaysTempList = dataForecast["list"].filter(function(timestamp) {
         return timestamp["dt"].getDate() === twoDaysDate.getDate();
     })
-
-    console.log(twoDaysTempList);
     let twoDaysTemps = new Array();
     twoDaysTempList.forEach((timestamp) => {
         twoDaysTemps.push(timestamp.main.temp);
     })
 
-
     let threeDaysTempList = dataForecast["list"].filter(function(timestamp) {
         return timestamp["dt"].getDate() === threeDaysDate.getDate();
     })
-
-    console.log(threeDaysTempList);
     let threeDaysTemps = new Array();
     threeDaysTempList.forEach((timestamp) => {
         threeDaysTemps.push(timestamp.main.temp);
     })
-    //***************************** */
+
+
 
     // create text and image, print next 3 days to the DOM
     let desc = tomorrowsTempList[4].weather[0];
@@ -141,7 +137,6 @@ function forecastDay(dataForecast) {
     weather.appendChild(twoDaysSection);
     threeDaysSection.appendChild(threeDaysForecastText);
     weather.appendChild(threeDaysSection);
-
 }
 
 getWeather();
