@@ -81,11 +81,8 @@ main #weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    text-align: center;
 }
-
-/*main #weather p {
-    padding: 0;
-}*/
 
 main .hero-card img {
     width: 100%;
