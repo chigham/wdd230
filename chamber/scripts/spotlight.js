@@ -17,7 +17,7 @@ async function getAdvertisements() {
         };
     };
 
-    console.log(randomMembers);
+    //console.log(randomMembers);
 
     displayAd(randomMembers[0]);
     displayAd(randomMembers[1]);
@@ -27,11 +27,11 @@ function displayAd(member) {
     let ad = document.createElement("section");
     ad.classList.add("card");
     ad.innerHTML = member.name + "<br>" + member.advertisement;
-    console.log(ad);
-    console.log(spotlightSection);
+    //console.log(ad);
+    //console.log(spotlightSection);
     spotlightSection.appendChild(ad);
 
-    console.log(member.name + "<br>" + member.advertisement)
+    //console.log(member.name + "<br>" + member.advertisement)
 };
 
 getAdvertisements();
