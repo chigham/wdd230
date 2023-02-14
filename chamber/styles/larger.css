@@ -9,7 +9,7 @@
     }
 
     .logo {
-        scale: calc(0.67);
+        transform: scale(0.67);
     }
 
     header button {
@@ -26,7 +26,6 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
-        align-items: right;
         display: flex;
     }
 
