@@ -17,8 +17,6 @@ async function getAdvertisements() {
         };
     };
 
-    //console.log(randomMembers);
-
     displayAd(randomMembers[0]);
     displayAd(randomMembers[1]);
     displayAd(randomMembers[2]);
@@ -26,19 +24,20 @@ async function getAdvertisements() {
 
 function displayAd(member) {
     let ad = document.createElement("section");
-    ad.classList.add("card");
     let div = document.createElement("div");
     let img = document.createElement("img");
+
+    // configure and style elements
+    ad.classList.add("card");
+    ad.classList.add("member-" + member.membership);
     div.innerHTML = member.name + "<br>" + member.advertisement;
     img.src = member.icon;
     img.alt = member.name + " image";
-    //console.log(ad);
-    //console.log(spotlightSection);
+
+    // add the new elements
     ad.appendChild(div);
     ad.appendChild(img);
     spotlightSection.appendChild(ad);
-
-    //console.log(member.name + "<br>" + member.advertisement)
 };
 
 getAdvertisements();
