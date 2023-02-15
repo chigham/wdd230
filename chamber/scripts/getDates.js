@@ -12,18 +12,19 @@ function getLastModifiedDate() {
 }
 
 function shareLastvisitDate() {
-    let lastVisited = document.getElementById("last-visited")
+    let lastVisited = document.getElementById("last-visited");
 
     if (localStorage.getItem("lastVisit")) {
         let lastVisitDate = new Date(localStorage.getItem("lastVisit"));
         let currentVisitDate = new Date();
 
-        let timeDifference = Math.abs(currentVisitDate = lastVisitDate);
+        let timeDifference = Math.abs(currentVisitDate - lastVisitDate);
         let daysDifferent = Math.ceil(timeDifference / 1000 / 3600 / 24);
 
         lastVisited.innerHTML = "You last visited this page " + daysDifferent + " days ago.";
     } else {
-        lastVisited.innerHTML = "Welcome! This is your first visit to this page."
+        lastVisited.innerHTML = "Welcome! This is your first visit to this page.";
+        localStorage.setItem("lastVisit", new Date());
     }
 }
 
