@@ -231,9 +231,14 @@ form input.submit-btn {
     text-decoration: none;
 }
 
+.directory-main .member-bronze div a {
+    color: lightyellow;
+}
+
 .directory-main .member-bronze div {
-    text-shadow: -1px -1px 0 var(--halo), 1px -1px 0 var(--halo), -1px 1px 0 var(--halo), 1px 1px 0 var(--halo);
-    font-weight: bold;
+    /*text-shadow: -1px -1px 0 var(--halo), 1px -1px 0 var(--halo), -1px 1px 0 var(--halo), 1px 1px 0 var(--halo);*/
+    /*font-weight: bold;*/
+    color: white;
 }
 
 .main-toggle-list {
