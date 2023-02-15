@@ -25,16 +25,20 @@ async function getAdvertisements() {
 function displayAd(member) {
     let ad = document.createElement("section");
     let div = document.createElement("div");
+    let a = document.createElement("a");
     let img = document.createElement("img");
 
     // configure and style elements
     ad.classList.add("card");
     ad.classList.add("member-" + member.membership);
-    div.innerHTML = member.name + "<br>" + member.advertisement + "<br>" + member.membership.charAt(0).toUpperCase() + member.membership.slice(1) + " member";
+    a.href = member.website;
+    a.innerHTML = member.name;
+    div.innerHTML = "<br>" + member.advertisement + "<br>" + member.membership.charAt(0).toUpperCase() + member.membership.slice(1) + " member";
     img.src = member.icon;
     img.alt = member.name + " image";
 
     // add the new elements
+    div.insertBefore(a, div.firstChild);
     ad.appendChild(div);
     ad.appendChild(img);
     spotlightSection.appendChild(ad);
