@@ -46,7 +46,7 @@
 
     .discover-main {
         display: grid;
-        grid-template-columns: 48%;/*47.5% 47.5%;*/
+        grid-template-columns: 48%;
         align-items: center;
         justify-content: center;
         gap: 1rem;
@@ -118,13 +118,14 @@
         left: 20%;
         text-align: left;
         vertical-align: top;
-        
     }
+
     .main-toggle-list section :nth-child(3) {
         position:absolute;
         left: 40%;
         text-align: left;
     }
+
     .main-toggle-list section :last-child {
         position:absolute;
         left: 70%;
