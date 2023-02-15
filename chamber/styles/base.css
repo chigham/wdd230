@@ -3,7 +3,7 @@
     --silver: silver;
     --bronze: /*rgb(231, 104, 13)*//*#D1793B*/ #b87333; /* copper */;
     --non-profit: lightblue;
-    --halo: rgba(255, 255, 255, 0.25);
+    --halo: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -232,7 +232,7 @@ form input.submit-btn {
 }
 
 .directory-main .member-bronze div {
-    text-shadow: -0.5px -0.5px 0 var(--halo), 0.5px -0.5px 0 var(--halo), -0.5px 0.5px 0 var(--halo), 0.5px 0.5px 0 var(--halo);
+    text-shadow: -1px -1px 0 var(--halo), 1px -1px 0 var(--halo), -1px 1px 0 var(--halo), 1px 1px 0 var(--halo);
     font-weight: bold;
 }
 
