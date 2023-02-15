@@ -145,6 +145,10 @@ main .spotlights {
     margin-bottom: 1rem;
 }
 
+#spotlight-section a {
+    text-decoration: none;
+}
+
 #spotlight-section .card img:last-of-type {
     max-width: 100%;
     margin-top: auto;
