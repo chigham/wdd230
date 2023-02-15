@@ -30,7 +30,7 @@ function displayAd(member) {
     // configure and style elements
     ad.classList.add("card");
     ad.classList.add("member-" + member.membership);
-    div.innerHTML = member.name + "<br>" + member.advertisement;
+    div.innerHTML = member.name + "<br>" + member.advertisement + "<br>" + member.membership.charAt(0).toUpperCase() + member.membership.slice(1) + " member";
     img.src = member.icon;
     img.alt = member.name + " image";
 

@@ -137,6 +137,7 @@
 
     #spotlight-section .card {
         display: flex;
+        align-items: center;
     }
 
     #spotlight-section .card img:last-of-type {
