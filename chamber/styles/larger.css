@@ -134,4 +134,13 @@
     .directory-main .card {
         height: 220px;
     }
+
+    #spotlight-section .card {
+        display: flex;
+    }
+
+    #spotlight-section .card img:last-of-type {
+        max-width: 150px;
+        margin-left: auto;
+    }
 }
