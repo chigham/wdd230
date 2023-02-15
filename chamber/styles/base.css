@@ -1,8 +1,9 @@
 :root {
     --gold: gold;
     --silver: silver;
-    --bronze: rgb(228, 120, 42)/*#D1793B*/; /*#b87333;*/ /* copper */
+    --bronze: /*rgb(231, 104, 13)*//*#D1793B*/ #b87333; /* copper */;
     --non-profit: lightblue;
+    --halo: rgba(255, 255, 255, 0.25);
 }
 
 body {
@@ -228,6 +229,11 @@ form input.submit-btn {
 
 .directory-main a {
     text-decoration: none;
+}
+
+.directory-main .member-bronze div {
+    text-shadow: -0.5px -0.5px 0 var(--halo), 0.5px -0.5px 0 var(--halo), -0.5px 0.5px 0 var(--halo), 0.5px 0.5px 0 var(--halo);
+    font-weight: bold;
 }
 
 .main-toggle-list {
