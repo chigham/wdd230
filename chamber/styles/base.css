@@ -85,8 +85,10 @@ main #weather {
     text-align: center;
 }
 
-main .hero-card img {
-    width: 100%;
+main .hero-card picture, main .hero-card picture img {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
 }
 
 main .hero-card .call-to-action {
@@ -141,6 +143,11 @@ main .member-non-profit {
 main .spotlights {
     width: 60%;
     margin-bottom: 1rem;
+}
+
+#spotlight-section .card img:last-of-type {
+    max-width: 100%;
+    margin-top: auto;
 }
 
 main picture {
