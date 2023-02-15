@@ -33,6 +33,7 @@ function displayAd(member) {
     ad.classList.add("member-" + member.membership);
     a.href = member.website;
     a.innerHTML = member.name;
+    a.target = "_blank";
     div.innerHTML = "<br>" + member.advertisement + "<br>" + member.membership.charAt(0).toUpperCase() + member.membership.slice(1) + " member";
     img.src = member.icon;
     img.alt = member.name + " image";
