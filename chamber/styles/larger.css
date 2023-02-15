@@ -5,7 +5,12 @@
 
     .discover-body {
         display: grid;
-        grid-template-columns: 20% auto;
+        grid-template-columns: 40% 60%;
+    }
+
+    .discover-body .left-sidebar {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .logo {
@@ -41,8 +46,10 @@
 
     .discover-main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 48%;/*47.5% 47.5%;*/
         align-items: center;
+        justify-content: center;
+        gap: 1rem;
         width: 100%
     }
 
