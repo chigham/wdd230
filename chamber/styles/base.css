@@ -1,7 +1,7 @@
 :root {
     --gold: gold;
     --silver: silver;
-    --bronze: #D1793B; /*#b87333;*/ /* copper */
+    --bronze: rgb(228, 120, 42)/*#D1793B*/; /*#b87333;*/ /* copper */
     --non-profit: lightblue;
 }
 
